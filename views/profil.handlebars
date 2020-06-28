@@ -1,0 +1,105 @@
+
+    <header id="header">
+        <div id="header_title">
+            <h2 id="header_title_h2A">M<span id="header_title_h2A_span1">O</span>NSTER</h2>
+            <h2 id="header_title_h2B">TW<span id="header_title_h2B_span2">E</span><span id="header_title_h2B_span3">E</span>TY</h2>
+        </div>
+        <div id="header_2"></div>
+        <div id="header_logo">
+            <img src="monster_tweety.png" alt="logo, dessin de style cartoon d'un poussin enragé">
+        </div>
+        <div id="header_3"></div>
+        <div id="header_4"></div>
+
+        <div id="header_right">{{> logout_button}}</div>
+
+        <div id="header_5"></div>
+        <div id="header_6"></div>
+       
+        </div>
+    </header>
+    
+    <section id="profil">
+
+        <div id="profil_left">
+            <div id="profil_left-1"></div>
+            <div id="profil_left-2"></div>
+            <div id="profil_left-3"></div>
+            <div id="profil_left-4"></div>
+            <div id="profil_left-5"></div>
+            <div id="profil_left-6"></div>
+            <div id="profil_left-7"></div>
+            <div id="profil_left-8"></div>
+            <div id="profil_left-9"></div>
+            <div id="profil_left-10"></div>
+            <div id="profil_left-11"></div>
+
+        </div>
+    
+        <section id="profil_content">
+            {{!-- <div id="profil_content_top">
+                <div id="profil_content_top_topImg"></div>
+                <div id="profil_content_top_bottom">
+                    <div id="profil_content_top_bottom_card">
+                        <div id="profil_content_top_bottom_card_img"></div>
+                        
+                            <div id="profil_content_top_bottom_card_userinfo">
+                                <p class="userInfoName"> {{userName}}</p>
+                                <p class="userInfoPseudo">@{{userPseudo}}</p>
+                                <p class="following">{{following}} Following</p>
+                                <p class="followers">{{followers}} Followers</p>
+                            </div>
+                    
+                        </div>
+                </div> --}}
+                <div id="profil_content_container">
+                    <div id="profil_content_container_top"></div>
+                    <div id="profil_content_container_bottom">
+                        <div id="profil_content_container_bottom_card">
+                            <div id="profil_content_container_bottom_card_divImg">
+                                {{!-- <img src="munch.png" alt="le cri"> --}}
+                            </div>
+                            <div id="profil_content_container_bottom_card_userinfo">
+                                <p class="userInfoName"> {{userName}}</p>
+                                    <p class="userInfoPseudo">@{{userPseudo}}</p>
+                                  
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            
+                <div id="profil_content_mainTweetContainer">
+                    {{#each tweet}} 
+                        <div id="profil_content_mainTweetContainer_tweet">
+                            <p class="profil_content_mainTweetContainer_tweet-userInfo"> {{userName}} @{{userPseudo}}</p>
+                            <p class="profil_content_mainTweetContainer_tweet-tweetDate"> {{tweetDate}} </p>
+                            <p class="profil_content_mainTweetContainer_tweet-tweetPublished">{{content}}<p/>
+                            <p class="profil_content_mainTweetContainer_tweet-countLikes" > Likes </p>
+                            <p class="profil_content_mainTweetContainer_tweet-countRetweet" > Retweet</p>
+                            <p class="profil_content_mainTweetContainer_tweet-url"> https://qeswgvyjkln </p>
+                        </div>
+                    {{/each}}    
+                </div>
+            </div>    
+        </section>
+
+        <div id="profil_right">
+            <div id="profil_right_a"></div>
+            <div id="profil_right_b"></div>
+            <div id="profil_right_c">
+                <ul>
+                    <li><a href="/tweetactu">Accueil</a></li>
+                    <li><a href="#">Messages</a></li>
+                    <li><a href="#">Notifications</a></li>
+                    <li><a href="#">Signets</a></li>
+                </ul>
+            </div>
+            <div id="profil_right_d"></div>
+            <div id="profil_right_e"></div>
+            <div id="profil_right_f"></div>
+            <div id="profil_right_g"></div>
+
+        </div>
+        
+    </section>

@@ -1,0 +1,120 @@
+<section id=tweetactu>   
+    <section id=tweetactu_left>
+        <div id=tweetactu_left_header>
+            <div id=tweetactu_left_header_title>
+                <h2>MONSTER TWEETY</h2>
+                <div id=tweetactu_left_header_title-under>
+                    <div></div>
+                </div>
+            </div>
+            <img id=tweetactu_left_header_logo alt=logo src="monster_tweety.png">
+        </div>
+        
+        <div id=tweetactu_left_div2>
+            <div></div>
+        </div>
+        
+        <div id=tweetactu_left_div3>
+            <div id=tweetactu_left_div3_left></div>
+            <div></div>
+            <div id=tweetactu_left_div3_right></div>
+        </div>
+        
+        <div id=tweetactu_left_div4>
+            <div id=tweetactu_left_div4_left>
+                <div></div>
+            </div>
+            <div id=tweetactu_left_div4_right>
+                <div></div>
+            </div>
+        </div>
+        
+        <div id=tweetactu_left_div5>
+            <div></div>
+        </div>
+    </section>
+
+    <main id=tweetactu_filActu>
+        <div id=tweetactu_filActu_titre>
+            <h1>Accueil</h1>
+        </div>
+
+        <div id=tweetactu_filActu_creation>
+            <div id=tweetactu_filActu_creation_main>
+                <div id=tweetactu_filActu_creation_main_profil>
+                    <img id=tweetactu_filActu_creation_main_profil_picture src="diable.jpg">
+                    <p id=tweetactu_filActu_creation__main_profil_infodutweet> {{userName}} @{{userPseudo}}</p>
+                </div>
+
+                <form id=tweetactu_filActu_creation_main_content method="POST" action="/tweetactu">
+                    <textarea name="tweetContent" cols="50"  maxlength="140" placeholder="What's new ?"> </textarea>
+                    <button type="submit">Publish</button>
+                </form>
+            </div>
+            <div id=tweetactu_filActu_creation_details>
+                <p id=tweetactu_filActu_creation_buttons-tweetDate> {{tweetDate}} </p>
+                {{!-- <p> https://localhost:8080/tweetactu </p> --}}
+                {{!-- <button id=tweetactu_filActu_creation_buttons-countLike type="submit">&#9829; Like</button>
+                <button id=tweetactu_filActu_creation_buttons-countRetweet type="submit">&#8618; Retweet</button> --}}
+            </div>
+
+
+        </div>
+
+        <div id=tweetactu_filActu_archive>
+            {{#each tweet}} 
+            <div id=tweetactu_filActu_archive_each>
+                <div id=tweetactu_filActu_archive_each_tweet>
+                    <div id=tweetactu_filActu_archive_each_tweet_profil>
+                        <img id=tweetactu_filActu_archive_each_tweet_profil_picture src="diable.jpg">
+                        <p id=tweetactu_filActu_archive_each_tweet_profil_infodutweet> {{userName}} @{{userPseudo}}</p>
+                    </div>
+                    {{!-- <p id=tweetactu_filActu_archive_each_tweet_infodutweet> {{userName}} @{{userPseudo}}</p> --}}
+                    <p id=tweetactu_filActu_archive_each_tweet_content>{{content}}<p/>
+                </div>
+                <div id=tweetactu_filActu_archive_each_buttons>
+                    <p id=tweetactu_filActu_archive_each_buttons_tweetDate> {{tweetDate}} </p>
+                    <button id=tweetactu_filActu_archive_each_buttons_countLikes type="submit">&#9829; Like</button>
+                    <button id=tweetactu_filActu_archive_each_buttons_url type="submit">&#8618; Retweet</button>
+                    <p id=tweetactu_filActu_archive_each_url> </p>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+
+    </main>
+
+    <section id=tweetactu_right>
+       
+            <div id=tweetactu_right_top>
+                <div id=tweetactu_right_top_left>
+                    <div id=tweetactu_right_top_left_top></div>
+                    <div id=tweetactu_right_top_left_down>
+                        <div id=tweetactu_right_top_left_down_left>
+                            {{> profil_button}}
+                        </div>
+                        <div id=tweetactu_right_top_left_down_right>
+                            {{> logout_button}}
+                        </div>
+                    </div>
+                </div>
+                <div id=tweetactu_right_top_right></div>
+            </div>
+
+            <div id=tweetactu_right_down>
+                <div id=tweetactu_right_down_left>
+                    <div id=tweetactu_right_down_left_bottom></div>
+                </div>
+            </div>
+
+
+
+
+ {{!-- <div>
+            <p>test</p>
+            {{> logout_button}}
+            {{> profil_button}}
+        </div> --}}
+    </section>
+
+</section>
