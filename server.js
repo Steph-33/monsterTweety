@@ -49,6 +49,7 @@ server.use(router);
 
 orm.connectToDB();
 
-server.listen(5000, () => {
-    console.log('salut');
+let port = 5000;
+server.listen(port, () => {
+    console.log(`Vous êtes bien connecté sur le port ${port}`);
 });
